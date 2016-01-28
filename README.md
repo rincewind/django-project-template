@@ -2,9 +2,8 @@
 
 [![Dependency Status](https://gemnasium.com/jpadilla/django-project-template.svg)](https://gemnasium.com/jpadilla/django-project-template)
 
-This is a simple Django 1.9+ project template with my preferred setup. Most Django project templates make way too many assumptions or are just way too complicated. I try to make the least amount of assumptions possible while still trying provide a useful setup. Most of my projects are deployed to Heroku, so this is optimized for that but is not necessary.
+This is a simple Django 1.9+ project template with my preferred setup. Most Django project templates make way too many assumptions or are just way too complicated. I try to make the least amount of assumptions possible while still trying provide a useful setup. Most of my projects are deployed to [dokku](http://dokku.viewdocs.io/dokku/), so this is optimized for that but is not necessary.
 
-**Note**: If you're looking for the previous Django 1.7+ project template layout check out the [1.7](https://github.com/jpadilla/django-project-template/tree/1.7) branch.
 
 ## Features
 
@@ -14,14 +13,13 @@ This is a simple Django 1.9+ project template with my preferred setup. Most Djan
 - Load environment variables from `.env` with [django-dotenv](https://github.com/jpadilla/django-dotenv).
 - Collection of custom extensions with [django-extensions](http://django-extensions.readthedocs.org).
 - HTTPS and other security related settings on Staging and Production.
-- Procfile for running gunicorn with New Relic's Python agent.
-- PostgreSQL database support with psycopg2.
+- PostgreSQL database support with psycopg2 in production.
 
 ## How to install
 
 ```bash
 $ django-admin.py startproject \
-  --template=https://github.com/jpadilla/django-project-template/archive/master.zip \
+  --template=https://github.com/rincewind/django-project-template/archive/master.zip \
   --name=Procfile \
   --extension=py,md,env \
   project_name
