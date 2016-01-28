@@ -104,7 +104,7 @@ class Common(Configuration):
 
     # Static files (CSS, JavaScript, Images)
     # https://docs.djangoproject.com/en/{{ docs_version }}/howto/static-files/
-    STATIC_URL = '/static/'
+    STATIC_URL = '/static/'    
 
 
 class Development(Common):
@@ -138,4 +138,6 @@ class Production(Staging):
     """
     The in-production settings.
     """
-    pass
+    STATIC_ROOT = '/data/static'
+    MEDIA_ROOT = '/data/media'
+
