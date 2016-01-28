@@ -14,6 +14,7 @@ This is a simple Django 1.9+ project template with my preferred setup. Most Djan
 - Collection of custom extensions with [django-extensions](http://django-extensions.readthedocs.org).
 - HTTPS and other security related settings on Staging and Production.
 - PostgreSQL database support with psycopg2 in production.
+- Docker based deployment
 
 ## How to install
 
